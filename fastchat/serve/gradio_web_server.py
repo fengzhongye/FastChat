@@ -294,7 +294,6 @@ def http_bot(state, temperature, top_p, max_new_tokens, request: gr.Request):
     logger.info(f"http_bot. ip: {request.client.host}")
     start_tstamp = time.time()
     temperature = float(temperature)
-    repetition_penalty = float(repetition_penalty)
     top_p = float(top_p)
     max_new_tokens = int(max_new_tokens)
 
